@@ -1,0 +1,10 @@
+framework module BlueTooth {
+  umbrella header "BlueTooth.h"
+
+  export *
+  module * { export * }
+}
+
+module BlueTooth.Swift {
+    header "BlueTooth-Swift.h"
+}

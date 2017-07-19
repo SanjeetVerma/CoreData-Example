@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>ALCameraViewController.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-DesgingApp.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>TOCropViewController-TOCropViewControllerBundle.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>TOCropViewController.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>41DFA87E8A4670719569F50E20FB5E9E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5BE9428B646DE437A6F56DC87053F09D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D7FAEFEAF68AE19EB2D22369766AF24E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F6E3A21064D605BBD7806C5F831C3A98</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

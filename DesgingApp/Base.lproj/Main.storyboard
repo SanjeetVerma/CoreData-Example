@@ -1,0 +1,738 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Px5-ch-ds2">
+    <device id="retina3_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="ViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="DesgingApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="username" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="cW7-rR-MFf" customClass="MKTextField" customModule="DesgingApp" customModuleProvider="target">
+                                <rect key="frame" x="46" y="83" width="228" height="45"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="fMR-qw-Kfm"/>
+                                </constraints>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="floatingPlaceholderEnabled" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="bottomBorderHighlightWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="rippleEnabled" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="bottomBorderEnabled" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="floatingLabelBottomMargin">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="bottomBorderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="bottomBorderColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="backgroundAnimationEnabled" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="BUx-6y-9Or"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Password" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="bRj-yR-3u9" customClass="MKTextField" customModule="DesgingApp" customModuleProvider="target">
+                                <rect key="frame" x="46" y="160" width="228" height="45"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="WiQ-Yi-EXL"/>
+                                </constraints>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="floatingPlaceholderEnabled" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="bottomBorderHighlightWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="rippleEnabled" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="bottomBorderEnabled" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="floatingLabelBottomMargin">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="bottomBorderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="bottomBorderColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="backgroundAnimationEnabled" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="ums-Ab-Qhn"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3bE-Kg-eNe" customClass="MKButton" customModule="DesgingApp" customModuleProvider="target">
+                                <rect key="frame" x="91" y="246" width="137" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.52941176469999995" blue="0.81960784310000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="tja-t3-nLJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <state key="normal" title="Log In">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="rippleEnabled" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="rippleLayerColor">
+                                        <color key="value" red="0.98431372549999996" green="0.2274509804" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="btnLoginClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XH1-oo-bHt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Soe-OG-96E" customClass="MKButton" customModule="DesgingApp" customModuleProvider="target">
+                                <rect key="frame" x="57" y="310" width="206" height="35"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="fFq-Q1-3xb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <state key="normal" title="Create New Account">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="rippleEnabled" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="rippleLayerColor">
+                                        <color key="value" red="0.015686274510000001" green="0.67843137249999996" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="CreateNewAccontOnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="e7h-F2-Uzr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s5M-yv-oxk" customClass="MKButton" customModule="DesgingApp" customModuleProvider="target">
+                                <rect key="frame" x="57" y="380" width="206" height="35"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="fO1-SI-R7M"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <state key="normal" title="Forgot Password">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="rippleEnabled" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="rippleLayerColor">
+                                        <color key="value" red="0.015686274510000001" green="0.67843137249999996" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="ForgotPasswordOnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3PT-wn-gvL"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.5450980392" green="0.76862745099999996" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="bRj-yR-3u9" secondAttribute="trailing" constant="46" id="15a-3j-028"/>
+                            <constraint firstItem="s5M-yv-oxk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="57" id="3JY-Gg-9jc"/>
+                            <constraint firstItem="3bE-Kg-eNe" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="91" id="4BH-6m-iLi"/>
+                            <constraint firstAttribute="trailing" secondItem="3bE-Kg-eNe" secondAttribute="trailing" constant="92" id="5vX-LW-I0S"/>
+                            <constraint firstItem="bRj-yR-3u9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="46" id="Gn4-Gc-uTH"/>
+                            <constraint firstItem="cW7-rR-MFf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="46" id="I8F-La-gPS"/>
+                            <constraint firstAttribute="trailing" secondItem="s5M-yv-oxk" secondAttribute="trailing" constant="57" id="PgC-wr-VWq"/>
+                            <constraint firstAttribute="trailing" secondItem="cW7-rR-MFf" secondAttribute="trailing" constant="46" id="YvM-RA-WDn"/>
+                            <constraint firstItem="bRj-yR-3u9" firstAttribute="top" secondItem="cW7-rR-MFf" secondAttribute="bottom" constant="32" id="bac-W6-2cb"/>
+                            <constraint firstItem="s5M-yv-oxk" firstAttribute="top" secondItem="Soe-OG-96E" secondAttribute="bottom" constant="35" id="c3D-Za-BSf"/>
+                            <constraint firstItem="Soe-OG-96E" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="57" id="eOF-RH-vWf"/>
+                            <constraint firstItem="Soe-OG-96E" firstAttribute="top" secondItem="3bE-Kg-eNe" secondAttribute="bottom" constant="34" id="gF3-Pk-arK"/>
+                            <constraint firstItem="cW7-rR-MFf" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="19" id="gc7-9F-Cym"/>
+                            <constraint firstItem="3bE-Kg-eNe" firstAttribute="top" secondItem="bRj-yR-3u9" secondAttribute="bottom" constant="41" id="lcA-fh-Ewe"/>
+                            <constraint firstAttribute="trailing" secondItem="Soe-OG-96E" secondAttribute="trailing" constant="57" id="qTy-fn-G6g"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="46f-fs-yjI"/>
+                    <connections>
+                        <outlet property="btnLogin" destination="3bE-Kg-eNe" id="SUv-Ow-B9y"/>
+                        <outlet property="txtpassword" destination="bRj-yR-3u9" id="NTc-Un-sTU"/>
+                        <outlet property="txtuserName" destination="cW7-rR-MFf" id="Ybp-Fw-PjE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1113.75" y="122.5"/>
+        </scene>
+        <!--Registration View Controller-->
+        <scene sceneID="Wwr-WR-QfO">
+            <objects>
+                <viewController storyboardIdentifier="RegistrationViewController" id="jvK-vQ-fts" customClass="RegistrationViewController" customModule="DesgingApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Zyo-QQ-wTv"/>
+                        <viewControllerLayoutGuide type="bottom" id="iQm-EY-iD1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ygw-5s-RtO">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xz7-zJ-Sut">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            </navigationBar>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="username" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="Taw-A0-3bg" customClass="MKTextField" customModule="DesgingApp" customModuleProvider="target">
+                                <rect key="frame" x="46" y="84" width="228" height="45"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="fR2-Jg-0JJ"/>
+                                </constraints>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="floatingPlaceholderEnabled" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="bottomBorderHighlightWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="rippleEnabled" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="bottomBorderEnabled" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="floatingLabelBottomMargin">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="bottomBorderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="bottomBorderColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="backgroundAnimationEnabled" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="delegate" destination="jvK-vQ-fts" id="3hi-3r-slS"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="email" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="d3w-h2-ljT" customClass="MKTextField" customModule="DesgingApp" customModuleProvider="target">
+                                <rect key="frame" x="46" y="137" width="228" height="45"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="bTN-vP-3kD"/>
+                                </constraints>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="next"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="floatingPlaceholderEnabled" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="bottomBorderHighlightWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="rippleEnabled" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="bottomBorderEnabled" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="floatingLabelBottomMargin">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="bottomBorderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="bottomBorderColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="backgroundAnimationEnabled" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="delegate" destination="jvK-vQ-fts" id="nrl-BR-TzO"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="phone" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="umv-st-zWs" customClass="MKTextField" customModule="DesgingApp" customModuleProvider="target">
+                                <rect key="frame" x="46" y="190" width="228" height="45"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="62a-oQ-fVA"/>
+                                </constraints>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="phonePad" returnKeyType="next"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="floatingPlaceholderEnabled" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="bottomBorderHighlightWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="rippleEnabled" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="bottomBorderEnabled" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="floatingLabelBottomMargin">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="bottomBorderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="bottomBorderColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="backgroundAnimationEnabled" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="delegate" destination="jvK-vQ-fts" id="OXU-bJ-ETO"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="password" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="Nmg-RK-VAI" customClass="MKTextField" customModule="DesgingApp" customModuleProvider="target">
+                                <rect key="frame" x="46" y="243" width="228" height="45"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="Ozi-hH-p8K"/>
+                                </constraints>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="next" secureTextEntry="YES"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="floatingPlaceholderEnabled" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="bottomBorderHighlightWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="rippleEnabled" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="bottomBorderEnabled" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="floatingLabelBottomMargin">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="bottomBorderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="bottomBorderColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="backgroundAnimationEnabled" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="delegate" destination="jvK-vQ-fts" id="qs4-eo-hFW"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder=" confirm password" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="ofY-He-ue9" customClass="MKTextField" customModule="DesgingApp" customModuleProvider="target">
+                                <rect key="frame" x="46" y="296" width="228" height="45"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="X0b-VR-kEy"/>
+                                </constraints>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="next" secureTextEntry="YES"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="floatingPlaceholderEnabled" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="bottomBorderHighlightWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="rippleEnabled" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="bottomBorderEnabled" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="floatingLabelBottomMargin">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="bottomBorderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="bottomBorderColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="backgroundAnimationEnabled" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="delegate" destination="jvK-vQ-fts" id="0xr-Vt-o3N"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dDA-Tu-WbM" customClass="MKButton" customModule="DesgingApp" customModuleProvider="target">
+                                <rect key="frame" x="92" y="364" width="137" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.52941176469999995" blue="0.81960784310000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="lWD-zn-fKF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <state key="normal" title="Submit">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="rippleEnabled" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="rippleLayerColor">
+                                        <color key="value" red="0.98431372549999996" green="0.2274509804" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="btnSubmit:" destination="jvK-vQ-fts" eventType="touchUpInside" id="IYW-yf-cUT"/>
+                                </connections>
+                            </button>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6Mw-tf-YLQ">
+                                <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Regitration" id="Zpo-Vr-9DE">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="reply" id="2Em-5T-bnx">
+                                            <connections>
+                                                <action selector="GoBack:" destination="jvK-vQ-fts" id="abL-aP-Kq2"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" red="0.5450980392" green="0.76862745099999996" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="dDA-Tu-WbM" firstAttribute="top" secondItem="ofY-He-ue9" secondAttribute="bottom" constant="23" id="3qG-k9-1LV"/>
+                            <constraint firstItem="umv-st-zWs" firstAttribute="top" secondItem="d3w-h2-ljT" secondAttribute="bottom" constant="8" id="4fk-Nw-Tdb"/>
+                            <constraint firstAttribute="trailing" secondItem="dDA-Tu-WbM" secondAttribute="trailing" constant="91" id="4mQ-5v-IF8"/>
+                            <constraint firstItem="Nmg-RK-VAI" firstAttribute="top" secondItem="umv-st-zWs" secondAttribute="bottom" constant="8" id="8Sn-Ki-yPc"/>
+                            <constraint firstItem="umv-st-zWs" firstAttribute="leading" secondItem="Ygw-5s-RtO" secondAttribute="leading" constant="46" id="KEW-e3-9aF"/>
+                            <constraint firstItem="d3w-h2-ljT" firstAttribute="leading" secondItem="Ygw-5s-RtO" secondAttribute="leading" constant="46" id="MVZ-KU-Bgp"/>
+                            <constraint firstItem="Nmg-RK-VAI" firstAttribute="leading" secondItem="Ygw-5s-RtO" secondAttribute="leading" constant="46" id="PTg-zg-eQO"/>
+                            <constraint firstAttribute="trailing" secondItem="umv-st-zWs" secondAttribute="trailing" constant="46" id="RLu-XW-dBP"/>
+                            <constraint firstItem="ofY-He-ue9" firstAttribute="top" secondItem="Nmg-RK-VAI" secondAttribute="bottom" constant="8" id="XqV-bj-ae7"/>
+                            <constraint firstItem="ofY-He-ue9" firstAttribute="leading" secondItem="Ygw-5s-RtO" secondAttribute="leading" constant="46" id="ZAv-S4-xac"/>
+                            <constraint firstAttribute="trailing" secondItem="d3w-h2-ljT" secondAttribute="trailing" constant="46" id="aTF-yA-oR8"/>
+                            <constraint firstItem="dDA-Tu-WbM" firstAttribute="leading" secondItem="Ygw-5s-RtO" secondAttribute="leading" constant="92" id="bGF-NG-giP"/>
+                            <constraint firstItem="d3w-h2-ljT" firstAttribute="top" secondItem="Taw-A0-3bg" secondAttribute="bottom" constant="8" id="bM2-oq-7s2"/>
+                            <constraint firstItem="Taw-A0-3bg" firstAttribute="leading" secondItem="Ygw-5s-RtO" secondAttribute="leading" constant="46" id="iFL-IY-3Vj"/>
+                            <constraint firstAttribute="trailing" secondItem="Taw-A0-3bg" secondAttribute="trailing" constant="46" id="oEZ-5t-hKE"/>
+                            <constraint firstAttribute="trailing" secondItem="ofY-He-ue9" secondAttribute="trailing" constant="46" id="tXl-p3-Wl0"/>
+                            <constraint firstItem="Taw-A0-3bg" firstAttribute="top" secondItem="Zyo-QQ-wTv" secondAttribute="bottom" constant="64" id="vor-1i-INd"/>
+                            <constraint firstAttribute="trailing" secondItem="Nmg-RK-VAI" secondAttribute="trailing" constant="46" id="zoz-Yk-zGh"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="txtConPassword" destination="ofY-He-ue9" id="WWp-LT-fpb"/>
+                        <outlet property="txtEmail" destination="d3w-h2-ljT" id="v5h-Pz-cTI"/>
+                        <outlet property="txtPassword" destination="Nmg-RK-VAI" id="zB1-63-vX6"/>
+                        <outlet property="txtPhone" destination="umv-st-zWs" id="916-F0-SQm"/>
+                        <outlet property="txtUsername" destination="Taw-A0-3bg" id="xjm-8I-mU0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ngC-Rz-oSN" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1878.75" y="122.5"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="tWC-cT-d3p">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Px5-ch-ds2" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="zZ9-Fn-eYJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="iee-No-9gs"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f6u-gj-BWF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="116.25" y="122.5"/>
+        </scene>
+        <!--Contact Add Edit View Controller-->
+        <scene sceneID="CsO-lh-MSH">
+            <objects>
+                <viewController storyboardIdentifier="ContactAddEditViewController" id="21j-ys-q8d" customClass="ContactAddEditViewController" customModule="DesgingApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="CYc-WT-8lz"/>
+                        <viewControllerLayoutGuide type="bottom" id="4uc-yW-wqe"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ecM-Vg-N9i">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5ua-cJ-XLo">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            </navigationBar>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="First Name" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="oVm-mu-61j" customClass="MKTextField" customModule="DesgingApp" customModuleProvider="target">
+                                <rect key="frame" x="46" y="170" width="228" height="45"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="dGp-4c-Ft8"/>
+                                </constraints>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="floatingPlaceholderEnabled" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="bottomBorderHighlightWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="rippleEnabled" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="bottomBorderEnabled" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="floatingLabelBottomMargin">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="bottomBorderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="bottomBorderColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="backgroundAnimationEnabled" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="floatingLabelTextColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="delegate" destination="21j-ys-q8d" id="oYZ-as-Rtr"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="last Name" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="hci-SL-UxK" customClass="MKTextField" customModule="DesgingApp" customModuleProvider="target">
+                                <rect key="frame" x="46" y="223" width="228" height="45"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="N2O-BC-HHl"/>
+                                </constraints>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="floatingPlaceholderEnabled" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="bottomBorderHighlightWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="rippleEnabled" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="bottomBorderEnabled" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="floatingLabelBottomMargin">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="bottomBorderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="bottomBorderColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="backgroundAnimationEnabled" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="delegate" destination="21j-ys-q8d" id="EKw-rp-rDt"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="email" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="B7b-5I-7jP" customClass="MKTextField" customModule="DesgingApp" customModuleProvider="target">
+                                <rect key="frame" x="46" y="276" width="228" height="45"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="Q1X-8R-oQl"/>
+                                </constraints>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="next"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="floatingPlaceholderEnabled" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="bottomBorderHighlightWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="rippleEnabled" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="bottomBorderEnabled" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="floatingLabelBottomMargin">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="bottomBorderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="bottomBorderColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="backgroundAnimationEnabled" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="delegate" destination="21j-ys-q8d" id="ghb-No-Y6E"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="phone" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="Tuh-dF-cbx" customClass="MKTextField" customModule="DesgingApp" customModuleProvider="target">
+                                <rect key="frame" x="46" y="329" width="228" height="45"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="Hlj-ci-cdf"/>
+                                </constraints>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="namePhonePad" returnKeyType="done"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="floatingPlaceholderEnabled" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="bottomBorderHighlightWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="rippleEnabled" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="bottomBorderEnabled" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="floatingLabelBottomMargin">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="bottomBorderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="bottomBorderColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="backgroundAnimationEnabled" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="delegate" destination="21j-ys-q8d" id="sCv-rs-hUu"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vbK-cs-X7A" customClass="MKButton" customModule="DesgingApp" customModuleProvider="target">
+                                <rect key="frame" x="92" y="396" width="137" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.52941176469999995" blue="0.81960784310000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="TlT-yx-b9W"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <state key="normal" title="Submit">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="rippleEnabled" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="rippleLayerColor">
+                                        <color key="value" red="0.98431372549999996" green="0.2274509804" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="btnSubmit:" destination="21j-ys-q8d" eventType="touchUpInside" id="z1b-k5-9mx"/>
+                                </connections>
+                            </button>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eJ1-om-3mY">
+                                <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Contact Add/Edit" id="Y4Q-i3-UP4">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="reply" id="ykg-a8-oYD">
+                                            <connections>
+                                                <action selector="GoBack:" destination="21j-ys-q8d" id="vMV-nF-LWU"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sfZ-tS-XxP">
+                                <rect key="frame" x="120" y="75" width="80" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="btnUserImage:" destination="21j-ys-q8d" eventType="touchUpInside" id="tdr-rw-DzC"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.5450980392" green="0.76862745099999996" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="B7b-5I-7jP" secondAttribute="trailing" constant="46" id="4Ew-Bl-Rm7"/>
+                            <constraint firstItem="oVm-mu-61j" firstAttribute="top" secondItem="CYc-WT-8lz" secondAttribute="bottom" constant="150" id="4p5-Tc-GKc"/>
+                            <constraint firstItem="Tuh-dF-cbx" firstAttribute="leading" secondItem="ecM-Vg-N9i" secondAttribute="leading" constant="46" id="DzA-HT-L5k"/>
+                            <constraint firstItem="hci-SL-UxK" firstAttribute="leading" secondItem="ecM-Vg-N9i" secondAttribute="leading" constant="46" id="Ew8-kd-NR5"/>
+                            <constraint firstAttribute="trailing" secondItem="hci-SL-UxK" secondAttribute="trailing" constant="46" id="F4a-RK-WHB"/>
+                            <constraint firstAttribute="trailing" secondItem="oVm-mu-61j" secondAttribute="trailing" constant="46" id="HXu-vO-i6Y"/>
+                            <constraint firstItem="B7b-5I-7jP" firstAttribute="leading" secondItem="ecM-Vg-N9i" secondAttribute="leading" constant="46" id="ZRK-bX-9Jh"/>
+                            <constraint firstAttribute="trailing" secondItem="vbK-cs-X7A" secondAttribute="trailing" constant="91" id="aNB-LU-1VI"/>
+                            <constraint firstAttribute="trailing" secondItem="Tuh-dF-cbx" secondAttribute="trailing" constant="46" id="eCv-pz-BCe"/>
+                            <constraint firstItem="hci-SL-UxK" firstAttribute="top" secondItem="oVm-mu-61j" secondAttribute="bottom" constant="8" id="eeo-TD-J4P"/>
+                            <constraint firstItem="oVm-mu-61j" firstAttribute="leading" secondItem="ecM-Vg-N9i" secondAttribute="leading" constant="46" id="fUb-w9-1ub"/>
+                            <constraint firstItem="vbK-cs-X7A" firstAttribute="top" secondItem="Tuh-dF-cbx" secondAttribute="bottom" constant="22" id="gOW-6c-dJe"/>
+                            <constraint firstItem="Tuh-dF-cbx" firstAttribute="top" secondItem="B7b-5I-7jP" secondAttribute="bottom" constant="8" id="qXF-5S-yq2"/>
+                            <constraint firstItem="B7b-5I-7jP" firstAttribute="top" secondItem="hci-SL-UxK" secondAttribute="bottom" constant="8" id="s1m-cA-OQC"/>
+                            <constraint firstItem="vbK-cs-X7A" firstAttribute="leading" secondItem="ecM-Vg-N9i" secondAttribute="leading" constant="92" id="zmW-dL-hw6"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btnImage" destination="sfZ-tS-XxP" id="jEu-tA-oko"/>
+                        <outlet property="navigationBar" destination="eJ1-om-3mY" id="XIf-FS-HjZ"/>
+                        <outlet property="txtEmail" destination="B7b-5I-7jP" id="Pke-wy-C7z"/>
+                        <outlet property="txtFirstName" destination="oVm-mu-61j" id="0OY-49-uCe"/>
+                        <outlet property="txtLastName" destination="hci-SL-UxK" id="yW3-zK-Uxj"/>
+                        <outlet property="txtPhone" destination="Tuh-dF-cbx" id="sdH-xZ-4wD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WWx-9A-d6T" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1878.75" y="813.75"/>
+        </scene>
+        <!--Contact View Controller-->
+        <scene sceneID="yFp-7M-qCj">
+            <objects>
+                <viewController storyboardIdentifier="ContactViewController" id="aKn-CD-CFy" customClass="ContactViewController" customModule="DesgingApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="TEn-fe-DPL"/>
+                        <viewControllerLayoutGuide type="bottom" id="xNE-fc-PtQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hAB-2f-sTz">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QB9-Ha-mEq">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="No Recod Found" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zT3-ku-3ry">
+                                <rect key="frame" x="0.0" y="80" width="320" height="40"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="58M-e4-JXb">
+                                <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="a2G-95-jLb">
+                                        <rect key="frame" x="0.0" y="28" width="320" height="80"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="a2G-95-jLb" id="Jrb-gD-pNt">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <sections/>
+                                <connections>
+                                    <outlet property="dataSource" destination="aKn-CD-CFy" id="GUs-fO-Fqo"/>
+                                    <outlet property="delegate" destination="aKn-CD-CFy" id="YfD-Xf-0fe"/>
+                                </connections>
+                            </tableView>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UPV-71-reg">
+                                <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Contact List" id="wGj-j5-WUk">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="reply" id="9Zg-H3-hNX">
+                                            <connections>
+                                                <action selector="GoBack:" destination="aKn-CD-CFy" id="RX9-1j-NgJ"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="lPV-d5-UcJ">
+                                            <connections>
+                                                <action selector="AddNewContact:" destination="aKn-CD-CFy" id="o1o-Id-rKO"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" red="0.5450980392" green="0.76862745099999996" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="xNE-fc-PtQ" firstAttribute="top" secondItem="58M-e4-JXb" secondAttribute="bottom" id="7yZ-YZ-pIV"/>
+                            <constraint firstAttribute="trailing" secondItem="58M-e4-JXb" secondAttribute="trailing" id="asg-jK-J5j"/>
+                            <constraint firstItem="58M-e4-JXb" firstAttribute="top" secondItem="hAB-2f-sTz" secondAttribute="top" constant="64" id="cs3-QU-GPi"/>
+                            <constraint firstItem="58M-e4-JXb" firstAttribute="leading" secondItem="hAB-2f-sTz" secondAttribute="leading" id="oAd-nB-gbV"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="lblNoRecord" destination="zT3-ku-3ry" id="kBI-f9-wC0"/>
+                        <outlet property="tlbContact" destination="58M-e4-JXb" id="4ye-34-PfJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8rW-cJ-nv5" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1113.75" y="813.75"/>
+        </scene>
+    </scenes>
+</document>

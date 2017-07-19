@@ -1,0 +1,6 @@
+target 'DesgingApp' do
+ platform :ios, '8.0'
+ use_frameworks!
+ pod 'ALCameraViewController', '~> 1.2'
+ pod 'TOCropViewController', '~> 2.0'
+end
